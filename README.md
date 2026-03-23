@@ -1,35 +1,35 @@
-# Zahlenraten
-In "Zahlenraten" kann man wie es schon der Name sagt, zahlen raten. 
-[Zahlenraten.py](https://github.com/user-attachments/files/26157381/Zahlenraten.py)
+# Number Rates
+In “Number Rates” you can, as the name suggests, guess numbers.
+[NumberRates.py](https://github.com/user-attachments/files/26157381/NumberRates.py)
 # Code
 ```
 import random
 import time
 
 
-def Zahlenraten():
-    größe_random = int(input(f"wähle ein Zahl von 1 bis:"))
-    bestimmte_zahl = random.randint(1,(größe_random)) 
+def Number_Rates():
+    size_random = int(input(f"choose a number from 1 to:"))
+    specific_number = random.randint(1,(size_random)) 
     time.sleep(.1)
-    print("Zahl wird Zufällig gewählt..")
+    print("Number is chosen randomly..")
     time.sleep(1)
-    deine_zahl = int(input(f"Rate welche zahl es ist:"))
+    your_number = int(input(f"Guess what number it is:"))
     time.sleep(1)
     
-    if deine_zahl > bestimmte_zahl:
-        print("Deine zahl ist Leider Größer, richtige zahl wäre gewesen:",(bestimmte_zahl))
-    if deine_zahl < bestimmte_zahl:
-        print("Deine zahl ist Leider Kleiner, richtige zahl wäre gewesen:",(bestimmte_zahl))
-    if bestimmte_zahl == deine_zahl:
-        print("Deine zahl ist Richtig! die gesuchte Zahl war:",(bestimmte_zahl))
+    if your_number > specific_number:
+        print("Unfortunately your number is larger, the correct number would have been:",(specific_number))
+    if your_number < specific_number:
+        print("Unfortunately your number is smaller, the correct number would have been:",(specific_number))
+    if specific_number == your_number:
+        print("Your number is correct! was the number we were looking for:",(specific_number))
     
 
 loop = 0
 
-print("(--Zahlen raten--)")
-print("danke das du dieses Programm benutzt :)")
+print("(--Number Rates--)")
+print("thank you for using this program :)")
 
 
 while loop == 0:
-    Zahlenraten()
+    Number_Rates()
     time.sleep(2)
