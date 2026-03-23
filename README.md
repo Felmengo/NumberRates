@@ -1,5 +1,5 @@
 # Number Rates
-In “Number Rates” you can, as the name suggests, guess numbers.
+ In “Number Rates” you can, as the name suggests, guess numbers.
 [NumberRates.py](https://github.com/user-attachments/files/26157381/NumberRates.py)
 # Code
 ```
